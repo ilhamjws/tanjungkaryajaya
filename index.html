@@ -15,12 +15,12 @@
   <title>Bootstrap Example</title>
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
 </head>
-  <body class="p-3 m-0 border-0 bd-example">
+  <body class="#">
     <!-- Example Code -->
     <nav class="navbar navbar-expand-lg ">
       <div class="container-fluid">
               <a class="navbar-brand" href="#">
-                <img src="LOGOPENGANNTI2.JPG" alt="Logo" width="50" height="30" class="navbar1 align-txt-top">
+                <img src="LOGOBARU.jpg" alt="Logo" width="50" height="30" class="navbar1 align-txt-top">
                 PT.TANJUNG <span>KARYA JAYA</span>
               </a>
         <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
@@ -31,16 +31,10 @@
             <li class="nav-item">
               <a class="nav-link " aria-current="page" href="index.html">HOME</a>
             </li>
-            <li class="nav-item dropdown">
-              <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+            <li class="nav-item">
+              <a class="nav-link" href="about.html" role="button" aria-expanded="false">
                 ABOUT
               </a>
-              <ul class="dropdown-menu">
-                <li><a class="dropdown-item" href="#">BACKGROUND</a></li>
-                <li><a class="dropdown-item" href="#">VISION & MISION</a></li>
-                <li><a class="dropdown-item" href="divisi.html">DIVISIONS</a></li>
-                <li><hr class="dropdown-divider"></li>
-              </ul>
             </li>
             <li class="nav-item dropdown">
               <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
@@ -50,7 +44,7 @@
                 <li><a class="dropdown-item" href="pvcduct.html">DUCTING BJLS</a></li>
                 <li><a class="dropdown-item" href="squareduct.html">SQUARE DUCT</a></li>
                 <li><a class="dropdown-item" href="airgrille.html">AIR GRILLIE</a></li>
-                <li><a class="dropdown-item" href="#">AIR DAMPER</a></li>
+                <li><a class="dropdown-item" href="airdamper.html">AIR DAMPER</a></li>
                 <li><a class="dropdown-item" href="#">MANHOLE</a></li>
                 <li><a class="dropdown-item" href="#">ROUND DUCT</a></li>
                 <li><a class="dropdown-item" href="#">ELECTRICAL</a></li>
@@ -74,28 +68,51 @@
     </nav>
     <!-- End Example Code -->
     <!-- KONTEN 1  -->
-    <div id="carouselExampleFade" class="carousel slide carousel-fade ">
-      <div class="carousel-inner ">
+    <div id="myCarousel" class="carousel slide mb-6" data-bs-ride="carousel">
+      <div class="carousel-indicators">
+        <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+        <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="1" aria-label="Slide 2"></button>
+        <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="2" aria-label="Slide 3"></button>
+      </div>
+      <div class="carousel-inner">
         <div class="carousel-item active">
-          <img src="WhatsApp Image 2023-08-12 at 17.00.38.jpg" class="d-block w-100" alt="...">
+         <img  src="WhatsApp Image 2023-08-12 at 17.00.36.jpg" class="bd-placeholder-img img-fluid" alt="">
+          <div class="container">
+            <div class="carousel-caption text-start">
+              <h1>PT.TANJUNG KARYA JAYA</h1>
+              <p class="opacity-75">Konstruksi Berkualitas, Masa Depan Terpercaya: PT. Tanjung Karya Jaya, Mitra Anda dalam Mekanikal, Elektrikal, Plumbing, dan HVAC.</p>
+              <p><a class="btn btn-lg btn-primary" href="about.html">About</a></p>
+            </div>
+          </div>
         </div>
         <div class="carousel-item">
-          <img src="WhatsApp Image 2023-08-12 at 17.00.37.jpg" class="d-block w-100" alt="...">
+          <img  src="WhatsApp Image 2023-08-12 at 17.00.38.jpg" class="bd-placeholder-img img-fluid" alt="">
+          <div class="container">
+            <div class="carousel-caption">
+              <h1>PT.TANJUNG KARYA JAYA</h1>
+              <p>Kepercayaan Terbukti, Karya Konstruksi Unggul: Membangun Prestasi di Setiap Sektor, dari Perkantoran hingga Kawasan Industri.</p>
+            </div>
+          </div>
         </div>
         <div class="carousel-item">
-          <img src="WhatsApp Image 2023-08-12 at 17.00.36.jpg" class="d-block w-100" alt="...">
+          <img  src="WhatsApp Image 2023-08-12 at 17.00.37.jpg" class="bd-placeholder-img img-fluid" alt="">
+          <div class="container">
+            <div class="carousel-caption text-end">
+              <h1>PT.TANJUNG KARYA JAYA</h1>
+              <p>Sukses Terbangun Melalui Kolaborasi: Bersama Mitra Setia Menuju Kemajuan Perusahaan dan Kualitas Terbaik.</p>
+            </div>
+          </div>
         </div>
       </div>
-      <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleFade" data-bs-slide="prev">
+      <button class="carousel-control-prev" type="button" data-bs-target="#myCarousel" data-bs-slide="prev">
         <span class="carousel-control-prev-icon" aria-hidden="true"></span>
         <span class="visually-hidden">Previous</span>
       </button>
-      <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleFade" data-bs-slide="next">
+      <button class="carousel-control-next" type="button" data-bs-target="#myCarousel" data-bs-slide="next">
         <span class="carousel-control-next-icon" aria-hidden="true"></span>
         <span class="visually-hidden">Next</span>
       </button>
     </div>
-   
     <!-- END -->
 <!-- FOOTER -->
   <div class="card bg-white border-top-3 bo mt-4">
@@ -103,16 +120,21 @@
           <div class="col-md-4 col-sm-4 col-xs-4">
               <div class="footer-text pull-left">
                   <div class="d-flex">
-                    <img src="LOGOPENGANNTI2.JPG" alt="Logo" width="50" height="30" class="navbar1 align-txt-top">
+                    <img src="LOGOBARU.jpg" alt="Logo" width="50" height="30" class="navbar1 align-txt-top">
                     <h5 class="px-2" style="color:#4d4d4d">PT.TANJUNG <span style="color:#054cff;">KARYA JAYA</span></h5> 
                   </div>
                   <p class="card-textdeskripsi">Inovasi untuk Lingkungan Optimal. Solusi terdepan dalam aliran udara dan teknologi listrik pintar untuk kenyamanan dan efisiensi.</p>
-                  <div class="d-flex justify-content-between w-50 mt-4 mb-3">
-                    <a href="https://www.facebook.com/Ilham Jawaz/"><i class="fa-brands fa-facebook fa-bounce fa-xl"  style="color: #201f51;"></i></a>
-                    <a href="https://www.instagram.com/ilhamjws/"><i class="fa-brands fa-instagram fa-bounce fa-xl"  style="color: #201f51;"></i></a>
-                    <a href="https://wa.me/6282125982221/"><i class="fa-brands fa-whatsapp fa-bounce fa-xl "  style="color: #201f51;"></i></a>
-                    <a href="mailto:jawas271@gmail.com"><i class="fa-solid fa-envelope fa-bounce fa-xl" style="color: #201f51;"></i></a>
+                  <div class="d-flex">
+                   <h5 style="color:#4d4d4d">BIDANG <span style="color:#054cff;">USAHA</span></h5> 
                   </div>
+                  <p class="card-textdeskripsi">KONTRAKTOR, MECHANICAL, ELECTRICAL, PULMBING DAN HVAC.</p>
+                  <div class="d-flex justify-content-between w-50 mt-4 mb-3">
+                    <a href="https://www.facebook.com/Ilham Jawaz/"><i class="fa-brands fa-facebook fa-bounce fa-xl"  style="color: #000000;"></i></a>
+                    <a href="https://www.instagram.com/ilhamjws/"><i class="fa-brands fa-instagram fa-bounce fa-xl"  style="color: #000000;"></i></a>
+                    <a href="https://wa.me/6282125982221/"><i class="fa-brands fa-whatsapp fa-bounce fa-xl "  style="color: #000000;"></i></a>
+                    <a href="mailto:TANJUNGKARYAJAYA@YAHOO.COM"><i class="fa-solid fa-envelope fa-bounce fa-xl" style="color: #000000;"></i></a>
+                  </div>
+
               </div>
           </div>
           <div class="col-md-2 col-sm-2 col-xs-2"></div>
@@ -129,17 +151,8 @@
               </ul>
           </div>
           <div class="col-md-2 col-sm-2 col-xs-2">
-            <h5 class="heading text-primary">ABOUT</h5>
-            <ul class="card-text">
-                <li><a class="text-decoration-none text-black">Background</a></li>
-                <li><a class="text-decoration-none text-black">Vision & Mision</a></li>
-                <li><a class="text-decoration-none text-black" href="divisi.html">Division</a></li>
-            </ul>
-          </div>
-          <div class="col-md-2 col-sm-2 col-xs-2">
               <h5 class="heading text-primary">LOCATION</h5>
-              <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d247.90952122365908!2d107.03103030526538!3d-6.190603966768464!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sid!2sid!4v1692464113782!5m2!1sid!2sid" width="200" style="border:3px;border-color: rgb(255, 0, 0);" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
-            
+              <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d247.9095184674659!2d107.03085235320026!3d-6.190609839415325!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2e6989faa19c4b9f%3A0x7e8fcebbc346f3d0!2sTKJ!5e0!3m2!1sid!2sid!4v1693321684679!5m2!1sid!2sid" width="400" height="200" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"</iframe>"></iframe>
           </div>
       </div>
       <div class="divider mb-4"> </div>
